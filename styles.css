@@ -1,0 +1,62 @@
+@media only screen and (min-width: 1000px) {
+  .characterInitialPosition {
+    position: relative; 
+    height: auto; 
+    width: 15%; 
+    left: -210px; /* + 42 per step */
+    transition: left .5s linear;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .characterInitialPosition {
+    position: relative; 
+    height: auto; 
+    width: 20%; 
+    left: -210px; /* + 42 per step */
+    transition: left .5s linear;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .characterInitialPosition {
+    position: relative; 
+    height: auto; 
+    width: 25%; 
+    left: -210px; /* + 42 per step */
+    transition: left .5s linear;
+  }
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color:  #FFEFD7;
+  }
+  
+.diceArea {
+    background-color: #FFE1BE;
+}
+
+.line {
+  width: 3%;
+  padding-bottom: 25%;
+  background-color:dodgerblue;
+  border-radius: 30%;
+}
+
+.gridDot {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 18px;
+}
+
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blinking {
+  animation: blink 1s infinite;
+}
