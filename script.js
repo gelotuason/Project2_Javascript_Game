@@ -13,7 +13,7 @@ let currentPosition = -210;
 let chances = 3;
 let winnerModal = new bootstrap.Modal(document.getElementById('winnerModal'));
 
-document.querySelector("#rollBtn").addEventListener("click", function () {
+document.querySelector("#rollBtn").addEventListener("click", function() {
     diceRollSound.play();
     // Dice roll
     const dices = [dice1, dice2, dice3, dice4, dice5, dice6];
